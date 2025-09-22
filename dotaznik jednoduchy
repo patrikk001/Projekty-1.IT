@@ -1,0 +1,12 @@
+print("Ahoj, ako sa volas")
+x = input()
+print(f"Ahoj {x}")
+
+print("Ake je tvoje oblubene jedlo")
+y = input()
+print(f"Palacinky {y}")
+
+print("Aka je tvoja oblubena kapela")
+v = input()
+print(f"Linkin Park {v}")
+
