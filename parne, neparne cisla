@@ -1,0 +1,23 @@
+def spocitaj_knz(cisla):
+    pk= 0
+    pz= 0
+    pp= 0
+   
+   
+    for cislo in cisla:
+        print("ahoj " + str(cislo))
+        if cislo > 0:
+            print("Vačšie ako nula")
+            pp=pp+1    
+        elif cislo == 0:
+            print("Číslo sa rovná nule ")
+            pk=pk+1
+        else:
+            print("Číslo je menšie ako nula")
+            pz= pz+1
+    print (f"Kladnych je {pp}")
+    print (f"Zapornych je {pz}")
+    print (f"Nul je {pk}")
+
+
+spocitaj_knz([1,3,-4, 15, -46, 0])
