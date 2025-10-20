@@ -1,0 +1,15 @@
+def number():
+    print("zadaj cislo:")
+    cislo = input()
+
+    if cislo.isdigit():
+        for i in range(0,int(cislo)):
+            print("z"*(i+1))
+        print(f"zadal si: {cislo}")
+
+    else:
+        print("nezadal si platne cislo")
+        number()
+
+
+number()
