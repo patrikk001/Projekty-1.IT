@@ -1,0 +1,10 @@
+def split_even_odds(cisla):
+    # Zo zoznamu vyberáme párne a nepárne čísla pomocou modulo
+    parne = [x for x in cisla if x % 2 == 0]
+    neparne = [x for x in cisla if x % 2 != 0]
+
+    print("Nepárne:", neparne)
+    print("Párne:", parne)
+
+# Testovanie funkcie
+split_even_odds([1, 585, 85, 5, 1, 10, 96, 6])
