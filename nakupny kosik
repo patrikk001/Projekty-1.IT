@@ -1,0 +1,29 @@
+kosik = ["chlieb", "mlieko", "maslo", "jablká", "chlieb"]
+
+print("Aktuálny košík:", kosik)
+
+
+polozka = input("Zadaj názov položky, ktorú chceš odstrániť: ")
+
+
+odstranene = False
+i = 0
+
+
+while i < len(kosik):
+    if kosik[i] == polozka:
+        kosik.pop(i)
+        odstranene = True
+        
+    else:
+        i += 1
+
+
+if odstranene:
+    print(f"Odstránil si všetky položky s názvom: {polozka}")
+else:
+    print(f"Položka '{polozka}' sa v košíku nenachádza.")
+
+print("Košík po odstránení:", kosik)
+
+
